@@ -11,10 +11,10 @@ import {
 
 const Dashboard: React.FC = () => {
     const stats = [
-        { label: 'Quote Requests', value: '12', icon: <ShoppingCart />, color: 'bg-blue-500', trend: '+20%' },
-        { label: 'Active Products', value: '84', icon: <Box />, color: 'bg-primary-600', trend: '+4' },
-        { label: 'Web Visitors', value: '1,280', icon: <Users />, color: 'bg-purple-500', trend: '+12.5%' },
-        { label: 'Conversion Rate', value: '3.2%', icon: <TrendingUp />, color: 'bg-green-500', trend: '+0.4%' },
+        { label: 'Quote Requests', value: '12', icon: <ShoppingCart />, color: 'bg-primary-600', trend: '+20%' },
+        { label: 'Active Products', value: '84', icon: <Box />, color: 'bg-secondary-800', trend: '+4' },
+        { label: 'Web Visitors', value: '1,280', icon: <Users />, color: 'bg-primary-700', trend: '+12.5%' },
+        { label: 'Conversion Rate', value: '3.2%', icon: <TrendingUp />, color: 'bg-secondary-700', trend: '+0.4%' },
     ];
 
     return (
@@ -59,7 +59,7 @@ const Dashboard: React.FC = () => {
                                     <p className="text-xs text-gray-500">Request for 4 items • 2 hours ago</p>
                                 </div>
                                 <div className="flex flex-col items-end">
-                                    <span className="text-[10px] uppercase font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded-full border border-blue-100">Pending Review</span>
+                                    <span className="text-[10px] uppercase font-bold text-primary-600 bg-primary-50 px-2 py-1 rounded-full border border-primary-100">Pending Review</span>
                                 </div>
                             </div>
                         ))}

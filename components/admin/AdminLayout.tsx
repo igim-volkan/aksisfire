@@ -45,12 +45,13 @@ const AdminLayout: React.FC = () => {
                 className={`bg-secondary-900 text-white transition-all duration-300 flex flex-col z-50 ${isSidebarOpen ? 'w-64' : 'w-20'}`}
             >
                 {/* Logo Area */}
-                <div className="p-6 flex items-center gap-3 border-b border-white/5">
-                    <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center shrink-0">
-                        <ShieldCheck size={24} />
-                    </div>
-                    {isSidebarOpen && (
-                        <span className="font-display font-bold text-xl tracking-tight">Admin<span className="text-primary-600">Portal</span></span>
+                <div className="p-6 flex items-center justify-center border-b border-white/5">
+                    {isSidebarOpen ? (
+                        <img src="/aksisfire-new.svg" alt="Aksisfire" className="h-8 brightness-0 invert" />
+                    ) : (
+                        <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center shrink-0">
+                            <ShieldCheck size={24} />
+                        </div>
                     )}
                 </div>
 
@@ -62,7 +63,7 @@ const AdminLayout: React.FC = () => {
                             <Link
                                 key={item.path}
                                 to={item.path}
-                                className={`flex items-center gap-4 p-3 rounded-xl transition-all group ${isActive ? 'bg-primary-600 text-white shadow-lg shadow-primary-600/20' : 'text-gray-400 hover:text-white hover:bg-white/5'}`}
+                                className={`flex items-center gap-4 p-3 rounded-xl transition-all group ${isActive ? 'bg-primary-700 text-white shadow-lg shadow-primary-900/20' : 'text-gray-400 hover:text-white hover:bg-white/5'}`}
                             >
                                 <div className={`${isSidebarOpen ? '' : 'mx-auto'}`}>
                                     {item.icon}

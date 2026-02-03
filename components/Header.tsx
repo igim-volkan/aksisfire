@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Menu, X, ChevronDown, Phone, Mail, Globe, ShoppingBag } from 'lucide-react';
+import { Menu, X, ChevronDown, Phone, Mail, Globe, ShoppingBag, User } from 'lucide-react';
 import { NAVIGATION_DATA } from '../constants';
 import { NavItem } from '../types';
 import { useCart } from '../context/CartContext';
@@ -40,6 +40,9 @@ const Header: React.FC = () => {
             <span className="flex items-center gap-1 hover:text-white transition-colors cursor-pointer">
               <Globe size={14} /> EN
             </span>
+            <Link to="/admin/login" className="flex items-center gap-1 hover:text-white transition-colors cursor-pointer">
+              <User size={14} /> Login
+            </Link>
           </div>
         </div>
       </div>

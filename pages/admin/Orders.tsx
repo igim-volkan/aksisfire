@@ -127,9 +127,9 @@ const Orders: React.FC = () => {
                                                 {order.itemCount} Items
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
-                                                <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full border ${order.status === 'pending' ? 'bg-amber-50 text-amber-600 border-amber-100' :
-                                                        order.status === 'reviewed' ? 'bg-blue-50 text-blue-600 border-blue-100' :
-                                                            'bg-green-50 text-green-600 border-green-100'
+                                                <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full border ${order.status === 'pending' ? 'bg-secondary-50 text-secondary-600 border-secondary-100' :
+                                                    order.status === 'reviewed' ? 'bg-primary-50 text-primary-600 border-primary-100' :
+                                                        'bg-green-50 text-green-600 border-green-100'
                                                     }`}>
                                                     {order.status}
                                                 </span>
@@ -187,13 +187,13 @@ const Orders: React.FC = () => {
                                                             <div className="flex gap-2">
                                                                 <button
                                                                     onClick={() => updateStatus(order.id, 'reviewed')}
-                                                                    className="px-4 py-2 bg-blue-600 text-white text-xs font-bold rounded-lg hover:bg-blue-700 transition-colors"
+                                                                    className="px-4 py-2 bg-secondary-900 text-white text-xs font-bold rounded-lg hover:bg-secondary-800 transition-colors"
                                                                 >
                                                                     Mark as Reviewed
                                                                 </button>
                                                                 <button
                                                                     onClick={() => updateStatus(order.id, 'completed')}
-                                                                    className="px-4 py-2 bg-green-600 text-white text-xs font-bold rounded-lg hover:bg-green-700 transition-colors"
+                                                                    className="px-4 py-2 bg-primary-600 text-white text-xs font-bold rounded-lg hover:bg-primary-700 transition-colors"
                                                                 >
                                                                     Complete Quote
                                                                 </button>
