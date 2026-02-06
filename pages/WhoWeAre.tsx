@@ -38,7 +38,7 @@ const WhoWeAre: React.FC = () => {
                 <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
                     <div>
                         <h2 className="text-3xl font-display font-bold text-secondary-900 mb-6 relative">
-                            Experts in Marine Fire Protection
+                            Expert in Marine Fire Protection
                             <span className="absolute -left-4 top-1 w-1 h-8 bg-primary-600 rounded-full"></span>
                         </h2>
                         <div className="prose prose-lg text-gray-600">

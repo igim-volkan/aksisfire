@@ -78,7 +78,7 @@ const Contact: React.FC = () => {
                         </p>
                         <div className="flex items-center gap-2 text-sm text-gray-500 mt-4">
                             <Clock size={16} />
-                            <span>Mon - Fri: 08:30 - 18:00</span>
+                            <span>Mon - Fri: 08:00 - 17:00</span>
                         </div>
                     </div>
 

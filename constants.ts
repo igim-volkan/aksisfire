@@ -25,7 +25,7 @@ export const NAVIGATION_DATA: NavItem[] = [
     path: "/products",
   },
   {
-    label: "Application",
+    label: "Applications",
     type: "link",
     path: "/application"
   },
@@ -121,6 +121,36 @@ export const PRODUCT_CATALOG = [
     path: "/products/co2-pilot-cylinder-2l",
     certifications: ["TPED"],
     specs: { material: "Steel", pressure: "High" }
+  },
+  {
+    id: 6,
+    name: "FK Tüpü",
+    category: "Cylinders",
+    image: "/fk-cylinder.jpg",
+    description: "FK 5-1-12 Extinguishing Cylinder for clean gas systems.",
+    path: "/products/fk-cylinder",
+    certifications: ["TPED"],
+    specs: { material: "Steel", pressure: "High" }
+  },
+  {
+    id: 7,
+    name: "Cargo Hold Smoke Detection Panel",
+    category: "Detection",
+    image: "/smoke-detection-panel.jpg",
+    description: "Advanced control panel for cargo hold smoke detection systems.",
+    path: "/products/smoke-detection-panel",
+    certifications: [],
+    specs: { material: "Steel/Electronics", pressure: "N/A" }
+  },
+  {
+    id: 8,
+    name: "Fan Unit",
+    category: "Ventilation",
+    image: "/fan-unit.jpg",
+    description: "High-performance fan unit for smoke extraction and ventilation.",
+    path: "/products/fan-unit",
+    certifications: [],
+    specs: { material: "Steel/Aluminum", pressure: "N/A" }
   }
 ];
 

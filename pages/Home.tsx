@@ -23,7 +23,7 @@ const Home: React.FC = () => {
       id: 2,
       image: '/hero-products.jpg',
       preTitle: 'Certified & Reliable Components',
-      title: 'HIGH PERFORMANCE PRODUCTS',
+      title: 'HIGH QUALITY PERFORMANCE PRODUCTS',
       description: 'Explore our wide range of internationally certified fire fighting products, from valves and cylinders to complete system components designed for safety and durability.',
       primaryButton: { text: 'View Products', link: '/products' },
       secondaryButton: { text: 'Contact Sales', link: '/contact/main' }
@@ -170,8 +170,8 @@ const Home: React.FC = () => {
               onClick={prevSlide}
               disabled={currentIndex === 0}
               className={`absolute left-0 top-1/2 -translate-y-1/2 p-2 rounded-full shadow-lg border border-gray-100 transition-all ${currentIndex === 0
-                  ? 'bg-gray-100 text-gray-400 cursor-not-allowed hidden'
-                  : 'bg-white text-secondary-900 hover:bg-primary-600 hover:text-white hover:border-primary-600'
+                ? 'bg-gray-100 text-gray-400 cursor-not-allowed hidden'
+                : 'bg-white text-secondary-900 hover:bg-primary-600 hover:text-white hover:border-primary-600'
                 } z-10`}
               aria-label="Previous slide"
             >
@@ -224,8 +224,8 @@ const Home: React.FC = () => {
               onClick={nextSlide}
               disabled={currentIndex >= maxIndex}
               className={`absolute right-0 top-1/2 -translate-y-1/2 p-2 rounded-full shadow-lg border border-gray-100 transition-all ${currentIndex >= maxIndex
-                  ? 'bg-gray-100 text-gray-400 cursor-not-allowed hidden'
-                  : 'bg-white text-secondary-900 hover:bg-primary-600 hover:text-white hover:border-primary-600'
+                ? 'bg-gray-100 text-gray-400 cursor-not-allowed hidden'
+                : 'bg-white text-secondary-900 hover:bg-primary-600 hover:text-white hover:border-primary-600'
                 } z-10`}
               aria-label="Next slide"
             >

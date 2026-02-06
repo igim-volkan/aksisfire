@@ -13,7 +13,7 @@ const Products: React.FC = () => {
   };
   // Filter States
   const [selectedCategory, setSelectedCategory] = useState<string>('All Products');
-  const [selectedCerts, setSelectedCerts] = useState<string[]>([]);
+
   const [selectedMaterials, setSelectedMaterials] = useState<string[]>([]);
 
   // Unique options for filters (derived from data)
@@ -21,9 +21,7 @@ const Products: React.FC = () => {
     ['All Products', ...Array.from(new Set(PRODUCT_CATALOG.map(p => p.category)))],
     []);
 
-  const allCertifications = useMemo(() =>
-    Array.from(new Set(PRODUCT_CATALOG.flatMap(p => p.certifications))),
-    []);
+
 
   const allMaterials = useMemo(() =>
     Array.from(new Set(PRODUCT_CATALOG.map(p => p.specs.material))),
@@ -35,24 +33,18 @@ const Products: React.FC = () => {
       // Category Match
       const categoryMatch = selectedCategory === 'All Products' || product.category === selectedCategory;
 
-      // Certifications Match (OR logic: if product has ANY of selected certs. Change to EVERY for AND logic)
-      const certMatch = selectedCerts.length === 0 ||
-        selectedCerts.some(cert => product.certifications.includes(cert));
+
 
       // Material Match
       const materialMatch = selectedMaterials.length === 0 ||
         selectedMaterials.includes(product.specs.material);
 
-      return categoryMatch && certMatch && materialMatch;
+      return categoryMatch && materialMatch;
     });
-  }, [selectedCategory, selectedCerts, selectedMaterials]);
+  }, [selectedCategory, selectedMaterials]);
 
   // Handlers
-  const toggleCert = (cert: string) => {
-    setSelectedCerts(prev =>
-      prev.includes(cert) ? prev.filter(c => c !== cert) : [...prev, cert]
-    );
-  };
+
 
   const toggleMaterial = (mat: string) => {
     setSelectedMaterials(prev =>
@@ -62,11 +54,11 @@ const Products: React.FC = () => {
 
   const clearFilters = () => {
     setSelectedCategory('All Products');
-    setSelectedCerts([]);
+
     setSelectedMaterials([]);
   };
 
-  const hasActiveFilters = selectedCategory !== 'All Products' || selectedCerts.length > 0 || selectedMaterials.length > 0;
+  const hasActiveFilters = selectedCategory !== 'All Products' || selectedMaterials.length > 0;
 
   return (
     <div className="pb-20 font-sans">
@@ -140,26 +132,7 @@ const Products: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Certifications */}
-                <div>
-                  <h4 className="font-bold text-sm text-gray-700 mb-3 uppercase tracking-wide">Certifications</h4>
-                  <div className="space-y-2">
-                    {allCertifications.map((cert) => (
-                      <label key={cert} className="flex items-center gap-3 cursor-pointer group">
-                        <div className={`w-4 h-4 rounded border flex items-center justify-center transition-colors ${selectedCerts.includes(cert) ? 'bg-primary-600 border-primary-600' : 'border-gray-300 bg-white'}`}>
-                          {selectedCerts.includes(cert) && <Check size={12} className="text-white" />}
-                        </div>
-                        <input
-                          type="checkbox"
-                          checked={selectedCerts.includes(cert)}
-                          onChange={() => toggleCert(cert)}
-                          className="hidden"
-                        />
-                        <span className="text-sm text-gray-600 group-hover:text-gray-900">{cert}</span>
-                      </label>
-                    ))}
-                  </div>
-                </div>
+
 
                 {/* Material */}
                 <div>
@@ -206,11 +179,7 @@ const Products: React.FC = () => {
                       {selectedCategory} <button onClick={() => setSelectedCategory('All Products')}><X size={10} /></button>
                     </span>
                   )}
-                  {selectedCerts.map(c => (
-                    <span key={c} className="text-xs bg-blue-50 text-blue-600 px-2 py-1 rounded-full flex items-center gap-1">
-                      {c} <button onClick={() => toggleCert(c)}><X size={10} /></button>
-                    </span>
-                  ))}
+
                 </div>
               )}
             </div>
