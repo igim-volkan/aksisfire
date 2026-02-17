@@ -18,6 +18,17 @@ interface Agent {
 
 const AGENTS: Agent[] = [
     {
+        id: 'turkey',
+        country: 'TÜRKİYE',
+        company: 'Aksis Yangın Söndürme Sistemleri A.Ş.',
+        contactPerson: 'Headquarters',
+        address: 'Deri OSB, Kazlıçeşme Cd. No:14/A, 34953 Tuzla / İstanbul',
+        phone: '+90 (216) 306 82 16',
+        email: 'aksisfire@aksisfire.com.tr',
+        website: 'www.aksisfire.com.tr',
+        coordinates: { top: '33%', left: '56%' }
+    },
+    {
         id: 'russia',
         country: 'RUSSIA',
         company: 'Polar Spb LLC',

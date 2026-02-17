@@ -52,7 +52,7 @@ export const NAVIGATION_DATA: NavItem[] = [
     path: "/contact",
     children: [
       { label: "Contact Us", path: "/contact/main" },
-      { label: "Our Agents", path: "/contact/agents" },
+      { label: "Global Network", path: "/contact/agents" },
       { label: "After Sales", path: "/contact/after-sales" },
     ]
   }
