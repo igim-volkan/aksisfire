@@ -17,13 +17,14 @@ const Home: React.FC = () => {
       title: 'MARINE FIRE PROTECTION',
       description: 'Aksisfire has a multi-disciplined technical staff fully experienced in shipbuilding and fire protection system design and production techniques. Full use is made of the latest approved design and calculation programs.',
       primaryButton: { text: 'Get a Quote', link: '/contact/main' },
-      secondaryButton: { text: 'View Solutions', link: '/fire-solutions' }
+      secondaryButton: { text: 'View Solutions', link: '/fire-solutions' },
+      caption: 'SANMAR SHIPYARD'
     },
     {
       id: 2,
       image: '/hero-products.jpg',
       preTitle: 'Certified & Reliable Components',
-      title: 'HIGH QUALITY PERFORMANCE PRODUCTS',
+      title: 'HIGH QUALITY PRODUCTS',
       description: 'Explore our wide range of internationally certified fire fighting products, from valves and cylinders to complete system components designed for safety and durability.',
       primaryButton: { text: 'View Products', link: '/products' },
       secondaryButton: { text: 'Contact Sales', link: '/contact/main' }
@@ -101,6 +102,18 @@ const Home: React.FC = () => {
                 </div>
               </div>
             </div>
+
+
+            {/* Image Caption */}
+            {
+              item.caption && (
+                <div className="absolute bottom-16 right-4 md:right-8 z-20">
+                  <span className="text-white/60 text-xs md:text-sm font-light tracking-widest uppercase bg-black/30 px-3 py-1 rounded backdrop-blur-sm">
+                    {item.caption}
+                  </span>
+                </div>
+              )
+            }
           </div>
         ))}
 
@@ -115,10 +128,10 @@ const Home: React.FC = () => {
             />
           ))}
         </div>
-      </section>
+      </section >
 
       {/* Intro / About Teaser */}
-      <section className="py-20 bg-white">
+      < section className="py-20 bg-white" >
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -154,10 +167,10 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Solutions Slider */}
-      <section className="py-20 bg-gray-50">
+      < section className="py-20 bg-gray-50" >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <span className="text-primary-600 font-bold tracking-wider uppercase text-sm mb-2 block">What We Do</span>
@@ -239,10 +252,10 @@ const Home: React.FC = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Call to Action */}
-      <section className="py-20 bg-primary-700 text-white">
+      < section className="py-20 bg-primary-700 text-white" >
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Need a Customized Fire Safety Solution?</h2>
           <p className="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
@@ -254,8 +267,8 @@ const Home: React.FC = () => {
             </Link>
           </div>
         </div>
-      </section>
-    </div>
+      </section >
+    </div >
   );
 };
 
