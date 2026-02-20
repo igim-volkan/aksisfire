@@ -175,33 +175,7 @@ const GenericPage: React.FC = () => {
                 </>
               )}
 
-              {slug && slug !== 'certificates' && (
-                <>
-                  <div className="my-8 p-6 bg-slate-50 border-l-4 border-primary-600 rounded shadow-sm">
-                    <h4 className="text-secondary-900 font-bold text-lg mb-2">Technical Specifications</h4>
-                    <p className="text-gray-600 text-sm mb-4">Typical specifications for this system type:</p>
-                    <ul className="grid md:grid-cols-2 gap-y-2 gap-x-4 text-sm text-secondary-800">
-                      <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-primary-600 rounded-full"></div> International Approval: MED / CE</li>
-                      <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-primary-600 rounded-full"></div> Operating Pressure: High / Low</li>
-                      <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-primary-600 rounded-full"></div> Material: Marine Grade Stainless Steel</li>
-                      <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-primary-600 rounded-full"></div> Activation: Manual & Automatic</li>
-                    </ul>
-                  </div>
 
-                  <h3 className="text-2xl font-display font-bold text-secondary-900 mb-4">Applications</h3>
-                  <ul className="list-disc pl-6 space-y-2 mb-8 marker:text-primary-600">
-                    <li>Commercial Shipping Vessels</li>
-                    <li>Offshore Platforms</li>
-                    <li>Industrial Manufacturing Plants</li>
-                    <li>Chemical Storage Facilities</li>
-                  </ul>
-
-                  <h3 className="text-2xl font-display font-bold text-secondary-900 mb-4">Why Choose Aksis?</h3>
-                  <p>
-                    Our {title} is rigorously tested in our in-house fire test room to ensure it meets the highest safety standards. We offer full lifecycle support from design and production to installation and after-sales maintenance.
-                  </p>
-                </>
-              )}
             </div>
 
             {slug !== 'certificates' && (

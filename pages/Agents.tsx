@@ -21,7 +21,7 @@ const AGENTS: Agent[] = [
         id: 'turkey',
         country: 'TÜRKİYE',
         company: 'Aksis Yangın Söndürme Sistemleri A.Ş.',
-        contactPerson: 'Headquarters',
+        contactPerson: 'Ömer Alper Şükür',
         address: 'Deri OSB, Kazlıçeşme Cd. No:14/A, 34953 Tuzla / İstanbul',
         phone: '+90 (216) 306 82 16',
         email: 'aksisfire@aksisfire.com.tr',
@@ -176,7 +176,9 @@ const Agents: React.FC = () => {
                         >
                             <div className="mb-6">
                                 <div>
-                                    <h2 className="text-2xl font-display font-bold text-secondary-900">{agent.country} AGENT</h2>
+                                    <h2 className="text-2xl font-display font-bold text-secondary-900">
+                                        {agent.id === 'turkey' ? 'HEADQUARTERS' : `${agent.country} AGENT`}
+                                    </h2>
                                     <p className="text-gray-500 text-sm font-medium">{agent.company}</p>
                                 </div>
                             </div>
