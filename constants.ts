@@ -6,17 +6,21 @@ export const NAVIGATION_DATA: NavItem[] = [
     type: "mega",
     path: "/fire-solutions",
     children: [
-      { label: "Fixed CO₂ System", path: "/solutions/fixed-co2-system" },
-      { label: "Fire Detection & Alarm", path: "/solutions/fire-detection-alarm" },
-      { label: "Local Application Watermist", path: "/solutions/local-watermist" },
-      { label: "Deep Fat Fryer System", path: "/solutions/deep-fat-fryer" },
-      { label: "External Fire Fighting (Fi-Fi)", path: "/solutions/fi-fi" },
-      { label: "Clean Gas System", path: "/solutions/clean-gas" },
-      { label: "Deck Foam System", path: "/solutions/deck-foam" },
-      { label: "Dry Powder System", path: "/solutions/dry-powder" },
+      { label: "CO₂ Fire Extinguishing System", path: "/solutions/co2-system" },
+      { label: "Deep Fat Fryer Fire Extinguishing System", path: "/solutions/deep-fat-fryer" },
+      { label: "Deck Foam Fire Fighting System", path: "/solutions/deck-foam" },
+      { label: "Water Spray Fire Extinguishing System", path: "/solutions/water-spray" },
+      { label: "Fire Detection & Alarm System", path: "/solutions/fire-detection-alarm" },
+      { label: "External Fire Fighting (Fi-Fi) System", path: "/solutions/fi-fi" },
+      { label: "Dry Powder Fire Extinguishing System", path: "/solutions/dry-powder" },
+      { label: "Drencher Fire Protection System", path: "/solutions/drencher" },
+      { label: "Local Application Watermist System", path: "/solutions/local-watermist" },
+      { label: "Clean Gas System (AKSIS FK5112 System)", path: "/solutions/clean-gas" },
       { label: "Sprinkler System", path: "/solutions/sprinkler" },
-      { label: "Water Spray System", path: "/solutions/water-spray" },
-      { label: "Drencher System", path: "/solutions/drencher" },
+      { label: "Smoke Sampling System", path: "/solutions/smoke-sampling" },
+      { label: "Inergen System", path: "/solutions/inergen" },
+      { label: "Oil Mist Detection System", path: "/solutions/oil-mist-detection" },
+      { label: "Gas Detection System", path: "/solutions/gas-detection" },
     ]
   },
   {
@@ -156,6 +160,15 @@ export const PRODUCT_CATALOG = [
 
 export const NEWS_DATA = [
   {
+    id: 6,
+    slug: "aksisfire-exhibiting-2026-bosphorus-boat-show",
+    title: "AKSISFIRE will be exhibiting at the 2026 Bosphorus Boat Show.",
+    date: "March 2026",
+    image: "/boat-show.jpg",
+    excerpt: "We would be delighted to welcome industry professionals to meet our team and learn more about our fixed marine fire suppression systems at the 2026 Bosphorus Boat Show.",
+    content: "We would be delighted to welcome industry professionals who would like to meet our team and learn more about our fixed marine fire suppression systems and engineering expertise. We have 12 complimentary invitations available for the first 12 professionals who contact us via direct message. We look forward to connecting with you at the show. ⚓"
+  },
+  {
     id: 1,
     slug: "aksisfire-signature-is-vapur-project",
     title: "The AKSISFIRE Signature on the İş Vapur Project: Safe and Environmentally Friendly Solutions",
@@ -203,71 +216,95 @@ export const NEWS_DATA = [
 ];
 
 export const SOLUTIONS_CONTENT: Record<string, { title: string; image: string; description: string; content: string }> = {
-  "fixed-co2-system": {
-    title: "Fixed CO₂ System",
+  "co2-system": {
+    title: "CO₂ Fire Extinguishing System",
     image: "/fixed-co2-system.png",
-    description: "Carbon Dioxide is a colorless, odorless, dry, inert gas and is one of the most well-known of all fire extinguishants.",
-    content: "Carbon Dioxide has been used as an extinguishant in fixed installations since the beginning of the twentieth century. Carbon Dioxide is a colorless, odorless, dry, inert gas and is one of the most well-known of all fire extinguishants.\n\nThe standard size cylinders used for the system are 67.5 L steel cylinders filled with 45 Kg of Carbon Dioxide. Cylinders can be delivered by following the requirements of the various national authorities, including required stamping and certificates."
-  },
-  "fire-detection-alarm": {
-    title: "Fire Detection & Alarm",
-    image: "/fire-detection-alarm.png",
-    description: "Part of the total fire protection",
-    content: "Part of total fire protection\nTherefore we have decided to design and install fire detection & alarm components as a part of our fire extinguishing systems.\n\nAksisfire offers customized design solutions and maximum safety according to marine rules and regulations.\n\nOur fire alarm systems, which are based on standard modules, may be delivered as stand-alone systems or communicate in integrated networks.\n\nOur skilled commissioning engineers are always ready to start up & testing the systems in a very short time onboard."
-  },
-  "local-watermist": {
-    title: "Local Application Watermist",
-    image: "/local-watermist.png",
-    description: "High standards of safety for ship engine spaces.",
-    content: "The Ship’s engine spaces require particularly high standards of safety on account of the particular conditions at sea. This applies especially to fire protection, and in particular, and around the engine room, which is home to fuel lines and other supply lines such as those that feed the main engines, auxiliary diesel engines, boiler burners, fuel separators, and pumps.\n\nAll these are typical areas of risk which must be considered when choosing an extinguishing system. The International Maritime Organization (IMO) therefore recommends a permanent, quick activation fire fighting system to protect equipment on board in addition to the total flooding fire suppression system."
+    description: "Provend fixed fire protection solution for high-risk enclosed spaces in marine applications.",
+    content: "The CO₂ Fire Extinguishing System is a proven fixed fire protection solution specifically engineered for high-risk enclosed spaces in marine applications. The system consists of high-pressure CO₂ cylinders, precisely designed manifold and distribution piping, discharge nozzles, and integrated control equipment, all configured through a project-based engineering approach specialized to each vessel.\n\nAll components are manufactured in compliance with IMO and SOLAS requirements and tested in accordance with the rules of relevant classification societies. Widely preferred for the protection of critical areas such as engine rooms, pump rooms, and cargo holds, the system provides a reliable fire safety solution for container ships, oil and chemical tankers, LNG/LPG carriers, Ro-Ro vessels, offshore support vessels, and passenger ships."
   },
   "deep-fat-fryer": {
-    title: "Deep Fat Fryer System",
+    title: "Deep Fat Fryer Fire Extinguishing System",
     image: "/deep-fat-fryer.jpg",
-    description: "Automatic kitchen object protection system for high-tech kitchens.",
-    content: "In high-tech kitchens, where deep fat fryers, special baking appliances, tilting-type frying pans, are in use, spontaneous fires must be expected. The use of an automatic kitchen object protection system is recommended here. Such a system guarantees that the fire will be extinguished immediately, keeping subsequent damages to a minimum and with almost no effect on the kitchen operations.\n\nThe Deep Fat Fryer extinguishing system has been specially designed for use in catering kitchens. The fire detection elements respond the moment the first small occurs, and there is promptly extinguished before serious damage occurs."
-  },
-  "fi-fi": {
-    title: "External Fire Fighting (Fi-Fi)",
-    image: "/fi-fi-system.png",
-    description: "External fire fighting systems for Tug boats and offshore vessels.",
-    content: "Aksisfire supplies external fire fighting systems to Tug boats, offshore vessels, and fire fighting ships with the cooperation of the world’s leading producer and supplier, Fire Fighting Systems AS (FFS)."
-  },
-  "clean-gas": {
-    title: "Clean Gas System",
-    image: "/clean-gas-system.png",
-    description: "Clean and safe fire suppression for sensitive equipment.",
-    content: "At sea, safety requirements for ships are of the utmost importance. This also applies to fire protection measures. After all, in the event of a fire, rapid escape is usually impossible and the prompt arrival of help from outside cannot be expected. In light of the various types of fire risks which exist onboard ships, specific solutions are necessary for the space or object to be protected in order to ensure optimal fire protection onboard.\n\nAreas that deserve special attention include rooms with electrical, and electronic devices, such as control rooms, control cabinets and smaller machine rooms on ships. In such risk areas, extinguishing systems which put out fires quickly yet carefully are essential, to ensure that sensitive equipment is not damaged by residues left by the extinguishing agent. With the Clean Gas FK5-1-12 agent Aksisfire offers clean and safe solutions which meet the demanding requirements on board a ship.\n\nThe systems are distinguished through the presence of the authorised and tested chemical suppressors: neither fire suppressor is corrosive nor electrically conductive, nor causes any damage to sensitive parts through short circuits or residues. Aksisfire’s FK 5-1-12 clean agent suppression systems are available for fishing boats, offshore vessels, tugboats, coast and inland navigation vessels and yachts. The size of the room to be protected is a key focus for both systems. As a result, they offer optimal fire protection in smaller and medium size rooms, and are fully certified with all major marine sector approvals."
+    description: "Dedicated local application solution designed to protect galley fryers onboard vessels.",
+    content: "The Deep Fat Fryer Fire Extinguishing System is a dedicated local application solution specifically designed to protect galley fryers onboard vessels. The system consists of an extinguishing agent cylinder, stainless steel distribution piping, specially engineered discharge nozzles, and manual and/or automatic activation mechanisms. It is engineered to provide rapid and effective response against high-risk cooking oil fires typically associated with deep fat frying equipment.\n\nDesigned for marine applications, the system is configured in compliance with IMO and SOLAS requirements and tested in accordance with the rules of relevant classification societies. Installed directly at fryer units within ship galleys, it provides reliable protection for passenger ships, cruise vessels, Ro-Ro vessels, offshore support vessels, and other commercial ships with intensive galley operations, offering a compact and reliable fire safety solution."
   },
   "deck-foam": {
-    title: "Deck Foam System",
+    title: "Deck Foam Fire Fighting System",
     image: "/deck-foam-system.png",
-    description: "Large-scale low foam blankets for tanker ship deck areas.",
-    content: "During a fire, foam extinguishing systems distribute large-scale low foam blankets via foam monitors and hand applicators to tanker ship’s tank deck areas. The foam is applied to the burning fuel or chemical cargoes, extinguishes the fire by the produce of foam film over the Cargo and serves as a deterrent against reignition.\n\nDeck Foam extinguishing systems are suitable for protecting high-risk areas, e.g. due to flammable liquids or chemicals.\n\nFlexible components for our foam extinguishing systems with a versatile foaming agent range. Aksisfire offers safe and flexible application. Perfectly aligned components are supplied in line with the individual needs of clients and according to respective fire protection requirements and the Rules."
+    description: "Fixed fire protection solution developed to protect open deck areas against flammable liquid fires.",
+    content: "The Deck Foam Fire Fighting System is a fixed fire protection solution specifically developed to protect open deck areas against flammable liquid fires, particularly on tanker vessels. The system consists of a foam concentrate tank, foam pump, proportioning unit, deck foam monitors, and a dedicated distribution network. It is engineered to provide effective surface coverage over large areas, enabling rapid control of hydrocarbon pool fires and preventing re-ignition.\n\nDesigned for marine applications, the system is configured in compliance with IMO and SOLAS requirements and tested in accordance with the rules of relevant classification societies. Primarily installed on oil and chemical tankers, the system ensures reliable protection of cargo deck areas where flammable substances are handled, offering a high-capacity fire safety solution for demanding marine environments."
+  },
+  "water-spray": {
+    title: "Water Spray Fire Extinguishing System",
+    image: "/water-spray-system.jpg",
+    description: "Fixed fire protection and cooling solution designed for areas and equipment where rapid fire spread may occur.",
+    content: "The Water Spray Fire Extinguishing System is a fixed fire protection and cooling solution designed for areas and equipment where rapid fire spread may occur. The system operates through open-type spray nozzles that discharge water in fine droplets, creating a high cooling effect.\n\nFor space protection applications, nozzles are evenly arranged—typically at ceiling level—to ensure uniform water distribution throughout the hazard area. In equipment protection systems, nozzles are specifically positioned and directed toward defined high-risk objects to provide targeted suppression or preventive cooling.\n\nDesigned for marine applications, the system is configured in compliance with IMO and SOLAS requirements and tested in accordance with the rules of relevant classification societies. It is widely used for the protection of fuel transfer areas, transformer rooms, deck equipment, and other special hazard spaces onboard tankers, LNG/LPG carriers, offshore support vessels, and various commercial ships."
+  },
+  "fire-detection-alarm": {
+    title: "Fire Detection & Alarm System",
+    image: "/fire-detection-alarm.png",
+    description: "Integrated safety solution designed to ensure early fire detection and immediate response onboard vessels.",
+    content: "The Fire Detection & Alarm System is an integrated safety solution designed to ensure early fire detection and immediate response onboard vessels. The system comprises smoke, heat, and flame detectors, manual call points, addressable or conventional control panels, audible and visual alarm devices, and monitoring modules, all configured to provide continuous system supervision.\n\nThrough the central control panel, all zones and zone devices are continuously monitored, with real-time indication of alarm, fault, and system status conditions.\n\nDesigned in compliance with IMO and SOLAS requirements and tested according to the rules of relevant classification societies, the system provides reliable protection for engine rooms, accommodation areas, cargo spaces, bridge, control rooms, and other critical spaces onboard tankers, container ships, LNG/LPG carriers, Ro-Ro vessels, offshore support vessels, and passenger ships."
+  },
+  "fi-fi": {
+    title: "External Fire Fighting (Fi-Fi) System",
+    image: "/fi-fi-system.png",
+    description: "High-capacity fire protection solution designed to enable vessels to support firefighting operations.",
+    content: "The External Fire Fighting (Fi-Fi) System is a high-capacity fire protection solution designed to enable vessels to support firefighting operations for other ships, port facilities, and offshore platforms. The system consists of high-capacity fire pumps, water and/or foam monitors, remote control systems, foam proportioning units, and dedicated piping infrastructure. It delivers powerful water or foam jets over long distances, ensuring effective and reliable intervention in demanding marine environments.\n\nThe systems are engineered in accordance with IMO and SOLAS requirements and certified based on the Fi-Fi class notation rules of relevant classification societies. Installed primarily on tug boats, offshore support vessels, and dedicated fire fighting ships, the Fi-Fi system provides a high-performance solution for ship-to-ship and ship-to-shore external fire response operations."
   },
   "dry-powder": {
-    title: "Dry Powder System",
+    title: "Dry Powder Fire Extinguishing System",
     image: "/dry-powder-system.png",
-    description: "Highly efficient, quick-acting extinguishing powders for various fire classes.",
-    content: "The extinguishing powders used in powder extinguishing systems are highly efficient, quick-acting extinguishants. The sudden extinguishing effect of the powder cloud is caused by the suffocation effect and the anticatalytic effect, a chemical intervention into the combustion process. Extinguishing powders mainly consist of non-poisonous inorganic salts mixed with waterproofing and pouring agents. They are used for fires with solid, liquid, or gaseous substances and metal fires, thus, they are used for fire classification A, B, C, and D. Our powder units is largely used to protect LNG carriers and LNG powered ships."
+    description: "Fixed fire protection solution designed to provide rapid and highly effective suppression of flammable gas and liquid fires.",
+    content: "The Dry Powder Fire Extinguishing System is a fixed fire protection solution designed to provide rapid and highly effective suppression of flammable gas and liquid fires. The system consists of a dry powder storage tank, pressurization unit, distribution piping and hose stations.\n\nThe extinguishing powders used in the system are highly efficient, quick-acting agents. The immediate suppression effect of the powder cloud is achieved through both a smothering effect and an anticatalytic action, which chemically interferes with the combustion process. The powders are primarily composed of non-toxic inorganic salts combined with waterproofing and flow-enhancing additives and are suitable for Class A, B, C, and D fires.\n\nDesigned in compliance with IMO and SOLAS requirements and tested according to relevant classification society rules, the system is widely used for the protection of LNG carriers and LNG-fueled vessels, as well as gas tankers and high-risk deck operation areas, providing a robust and reliable fire safety solution for demanding marine environments."
+  },
+  "drencher": {
+    title: "Drencher Fire Protection System",
+    image: "/drencher-system.jpg",
+    description: "Fixed water-based solution designed to protect specific spaces and structural boundaries onboard vessels.",
+    content: "The Drencher Fire Protection System is a fixed water-based solution designed to protect specific spaces and structural boundaries onboard vessels against fire exposure. The system consists of fire pumps, control panels, deluge/drencher control valves, distribution piping, and open-type drencher nozzles. Upon activation, all nozzles operate simultaneously to create a continuous water curtain over the protected area.\n\nThe generated water curtain reduces heat transfer between adjacent spaces, effectively cools structural elements, and limits fire spread.\n\nDesigned in compliance with IMO and SOLAS requirements and tested in accordance with relevant classification society rules, drencher systems are widely used for the protection of vehicle decks on Ro-Ro vessels, accommodation boundaries, under-deck spaces, and other special hazard areas onboard tankers, passenger ships, and various commercial vessels, offering a reliable fire protection solution."
+  },
+  "local-watermist": {
+    title: "Local Application Watermist System",
+    image: "/local-watermist.png",
+    description: "Integrated fire detection and suppression solution designed to protect high-risk machinery.",
+    content: "The Local Application Watermist System is an integrated fire detection and suppression solution designed to protect high-risk machinery and critical equipment onboard vessels. The system operates with two independent detectors installed directly above the protected equipment. Upon confirmation from both detectors, the system automatically activates the relevant section valve and discharges water mist precisely onto the fire source.\n\nThe system consists of a pump unit, control panel, section valves, stainless steel piping network, specially engineered nozzles, and audible alarm devices (sounders). Audible warnings are provided prior to and during discharge to enhance personnel safety. The fine water droplets deliver an intensive cooling effect, while the generated steam creates a smothering effect at the seat of the fire, increasing suppression efficiency.\n\nDesigned in accordance with IMO and SOLAS requirements, the system is used for the protection of main engines, auxiliary engines, generators, boilers, and fuel modules, and is widely applied onboard tankers, container vessels, LNG/LPG carriers, and offshore support vessels as a compact and reliable fire protection solution."
+  },
+  "clean-gas": {
+    title: "Clean Gas System (AKSIS FK5112 System)",
+    image: "/clean-gas-system.png",
+    description: "Fixed fire suppression solution designed to protect sensitive and critical spaces onboard vessels.",
+    content: "The Clean Gas System (AKSIS FK5112 System) is a fixed fire suppression solution designed to protect sensitive and critical spaces onboard vessels. In the event of a fire, the system discharges the clean agent (AKS5112) uniformly into the protected space, ensuring rapid and effective suppression without leaving residue or causing damage to sensitive equipment.\n\nThe system consists of cylinder assemblies, valve and actuator mechanisms, a distribution piping network, discharge nozzles, and a control panel. Activation can be performed pneumatically, manually, or electrically. Prior to discharge, audible and visual warnings are provided to ensure space safety and support a controlled evacuation process.\n\nAksisfire’s FK 5-1-12 clean agent suppression systems are available for fishing boats, offshore vessels, tugboats, coast and inland navigation vessels, and yachts. The system is particularly suitable for the protection of control rooms, electrical and electronic equipment spaces, control cabinets, and smaller machinery rooms onboard ships."
   },
   "sprinkler": {
     title: "Sprinkler System",
     image: "/sprinkler-system.png",
-    description: "Self-acting fire extinguishing systems with safe functioning principle.",
-    content: "Sprinkler systems are self-acting fire extinguishing systems having an uncomplicated as well a safe functioning principle. A network of piping and sprinkler heads are installed throughout the areas of the building requiring protection and is constantly under pressure. Under normal conditions, the sprinkler head is closed off by a liquid-filled bulb. If due to the effects of a fire, the ambient temperature in the immediate vicinity rises by approximately 30 c° above the maximum temperature expected under normal conditions, the glass bulb bursts. Then pressurized extinguishing water flows through the piping into the sprinkler head and the resulting water jet hits the spray plate which diverts the spray to the areas to be covered. At the same time, the water flow in the piping network trips the alarm system."
+    description: "Automatic fire suppression solution designed to protect accommodation and living spaces onboard vessels.",
+    content: "The Sprinkler System is an automatic fire suppression solution designed to protect accommodation and living spaces onboard vessels. When the ambient temperature rises to a predetermined level due to fire, the glass bulb within the sprinkler head ruptures, allowing water to discharge only in the affected area. This localized activation ensures rapid response while minimizing water damage.\n\nThe system fundamentally consists of a sprinkler tank, sprinkler pumps, control panels, control valves, a distribution piping network, and sprinkler nozzles. Upon activation, the system initiates water discharge and simultaneously transmits an alarm signal to notify the relevant fire monitoring systems.\n\nDesigned in compliance with IMO and SOLAS requirements, sprinkler systems are widely used for the protection of cabins, corridors, lounges, offices, and other accommodation spaces onboard passenger ships, ferries, cruise vessels, and various commercial ships, providing a reliable and efficient fire safety solution."
   },
-  "drencher": {
-    title: "Drencher System",
-    image: "/drencher-system.jpg",
-    description: "Deluge system triggered hydraulically, pneumatically or electrically for fast-spreading fires.",
-    content: "Drencher (Deluge) system is triggered hydraulically, pneumatically or electrically and disperse water throughout the entire protection zone with open nozzles. In this way, they reliably fight fires in rooms and facilities, even if a particularly fast spreading of the fire is to be expected. If necessary, a film-forming foam agent can be added to the extinguishing water."
+  "smoke-sampling": {
+    title: "Smoke Sampling System",
+    image: "/smoke-sampling.png",
+    description: "Fixed fire detection solution designed to provide early warning by continuously monitoring protected spaces.",
+    content: "The Smoke Sampling System is a fixed fire detection solution designed to provide early warning by continuously monitoring protected spaces for the presence of smoke particles.\n\nThe system consists of a main cabinet housing the smoke detection modules, control panels for monitoring system status and alarms, and a fan unit that continuously performs air sampling through dedicated nozzles installed within the protected area. The fan unit draws air samples from the cargo space and transports them to the smoke detectors, ensuring fast and reliable detection of a fire.\n\nDesigned in compliance with IMO and SOLAS requirements and certified according to the rules of relevant classification societies, the system is particularly used for the protection of cargo holds onboard cargo vessels, providing an effective and reliable early fire detection solution for large enclosed spaces."
   },
-  "water-spray": {
-    title: "Water Spray System",
-    image: "/water-spray-system.jpg",
-    description: "Open nozzle system for rapid fire spread protection.",
-    content: "When conditions are such that extremely rapid fire spread can be expected, Aksisfire suppression systems can provide maximum safety. Water-spray extinguishing systems operate with open extinguisher nozzles which, in the event of a fire, distribute the extinguishing water over the entire protected area, the quantity of extinguishant needed being minimal.\n\nSpray extinguishing increases the surface area of the extinguishing water, entrains the heat of in addition to this cooling effect there is a smothering effect because the steam produced impedes the oxygen supply to the base of the fire. Water-spray extinguishing systems are designed for space or equipment protection. In the case of space protection, the extinguishing water is distributed evenly across the whole area of the fire hazard. The extinguishing nozzles are therefore arranged evenly spaced at ceiling level, In the case of equipment protection systems, defined objects particularly subject to fire hazard are provided with water spray for protection or preventive cooling.\n\nThe extinguishing nozzles are therefore arranged to be specifically aimed at the object. For tall objects, they may also be installed at several levels."
+  "inergen": {
+    title: "Inergen System",
+    image: "/inergen-system.png",
+    description: "Clean agent fire suppression solution based on an inert gas mixture designed to extinguish fires by reducing oxygen concentration.",
+    content: "The Inergen System is a clean agent fire suppression solution based on an inert gas mixture designed to extinguish fires by reducing the oxygen concentration in the protected space to a level that stops combustion while remaining safe for occupied areas. The gas mixture consists of nitrogen, argon, and carbon dioxide, which together support human respiration during discharge.\n\nEngineered for rapid and uniform gas distribution, the system ensures effective fire suppression without leaving residue or causing damage to critical equipment. The system comprises cylinder assemblies, valve and actuator mechanisms, a piping distribution network, discharge nozzles, a control panel, and audible and visual alarm devices.\n\nDesigned in compliance with IMO and SOLAS requirements and certified according to the rules of relevant classification societies, the Inergen System is widely used for the protection of control rooms, electrical and electronic equipment spaces, and other critical areas onboard commercial vessels and offshore installations, providing reliable and environmentally responsible fire protection for high-value assets."
+  },
+  "oil-mist-detection": {
+    title: "Oil Mist Detection System",
+    image: "/oil-mist-detection.png",
+    description: "Advanced monitoring and early warning solution designed to proactively prevent fire risks in marine engine rooms.",
+    content: "The Oil Mist Detection System is an advanced monitoring and early warning solution designed to proactively prevent fire risks in marine engine rooms. While conventional fire detection systems react only after a fire has started, the system utilizes unique airflow technology to identify atmospheric oil mist and gas leaks before they reach ignition levels, effectively eliminating fire risks before escalation.\n\nEngineered with dual detection technology, the system minimizes false alarms and provides only real, actionable alerts, ensuring uninterrupted vessel operations. With the capability to monitor multiple zones simultaneously, it delivers comprehensive 24/7 surveillance, including hard-to-reach areas within the engine room.\n\nDesigned in compliance with IMO and SOLAS requirements and certified according to relevant classification society rules, the Oil Mist Detection System plays a critical role in reducing engine room fire risks—particularly those originating from oil leaks—and provides a reliable machinery safety solution for commercial vessels and yachts."
+  },
+  "gas-detection": {
+    title: "Gas Detection System",
+    image: "/gas-detection.png",
+    description: "Advanced monitoring and alarm solution designed for the early detection of flammable and toxic gases.",
+    content: "The Gas Detection System is an advanced monitoring and alarm solution designed for the early detection of flammable and toxic gases in marine and industrial applications. Gases such as hydrogen, methanol, and ammonia present significant risks due to their flammability, toxicity, or tendency to accumulate in confined spaces. Reliable gas detection is therefore essential to ensure personnel safety and operational continuity.\n\nThe system comprises fixed gas detectors (%LEL and ppm measurement technologies), zoned control and supervision modules, and a central control panel with integrated alarm management. Advanced software continuously monitors gas concentrations, activates audible and visual alarms when preset thresholds are exceeded, and supervises system integrity. Sequential sampling solutions are available for multi-point monitoring, particularly in cofferdams and fuel-related spaces.\n\nDesigned in compliance with IMO, SOLAS, and IGF Code requirements and certified according to relevant classification society rules, the Gas Detection System provides comprehensive and reliable gas safety for LNG, methanol-, hydrogen-, and ammonia-fueled vessels."
   }
 };
 

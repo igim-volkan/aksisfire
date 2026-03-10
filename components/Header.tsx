@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Menu, X, ChevronDown, Phone, Mail, Globe, ShoppingBag, User } from 'lucide-react';
-import { NAVIGATION_DATA } from '../constants';
+import { NAVIGATION_DATA, SOLUTIONS_CONTENT } from '../constants';
 import { NavItem } from '../types';
 import { useCart } from '../context/CartContext';
 
@@ -17,6 +17,11 @@ const Header: React.FC = () => {
 
   const handleMouseLeave = () => {
     setActiveDropdown(null);
+  };
+
+  const getSolutionImage = (path: string) => {
+    const key = path.split('/').pop() || '';
+    return SOLUTIONS_CONTENT[key]?.image || '';
   };
 
   return (
@@ -85,9 +90,16 @@ const Header: React.FC = () => {
                         key={child.label}
                         to={child.path || '#'}
                         className="flex items-center gap-3 p-2 rounded-md hover:bg-gray-50 group/item transition-colors"
+                        onClick={() => setActiveDropdown(null)}
                       >
-                        <div className="w-2 h-2 rounded-full bg-gray-300 group-hover/item:bg-primary-600 transition-colors"></div>
-                        <span className="text-sm font-medium text-gray-700 group-hover/item:text-primary-600">{child.label}</span>
+                        <div className="w-12 h-12 rounded-lg overflow-hidden bg-gray-100 flex-shrink-0 border border-gray-200 group-hover/item:border-primary-600 transition-colors">
+                          <img
+                            src={getSolutionImage(child.path || '')}
+                            alt={child.label}
+                            className="w-full h-full object-cover group-hover/item:scale-110 transition-transform duration-300"
+                          />
+                        </div>
+                        <span className="text-sm font-medium text-gray-700 group-hover/item:text-primary-600 leading-tight">{child.label}</span>
                       </Link>
                     ))}
                   </div>

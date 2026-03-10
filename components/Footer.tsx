@@ -16,10 +16,16 @@ const Footer: React.FC = () => {
             <p className="text-sm text-gray-400 mb-6 leading-relaxed">
               Leading provider of advanced fire suppression and detection systems. We ensure safety and compliance for marine and industrial sectors through innovation and reliability.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 mb-6">
               <a href="#" className="w-8 h-8 rounded bg-gray-800 flex items-center justify-center hover:bg-primary-600 transition-colors"><Facebook size={16} /></a>
               <a href="#" className="w-8 h-8 rounded bg-gray-800 flex items-center justify-center hover:bg-primary-600 transition-colors"><Linkedin size={16} /></a>
               <a href="#" className="w-8 h-8 rounded bg-gray-800 flex items-center justify-center hover:bg-primary-600 transition-colors"><Twitter size={16} /></a>
+            </div>
+            <div className="flex items-center gap-4">
+              <img src="/gptw_box_logo_red.svg" alt="Great Place to Work" className="h-12 w-12 object-contain" />
+              <div className="text-[10px] text-gray-500 uppercase leading-tight font-bold">
+                Great Place<br />To Work Certified
+              </div>
             </div>
           </div>
 
